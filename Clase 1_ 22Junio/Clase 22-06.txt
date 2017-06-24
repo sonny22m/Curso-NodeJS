@@ -1,0 +1,11 @@
+
+HTML ---> Tags/etiquetas
+
+npm --> deja instalar modulos
+
+consola 
+chdir para ver donde estas parado.
+cd + nombre para llamar la carpeta
+-v para ver si esta instalado
+
+contrl + shift + u para consola en visual//
