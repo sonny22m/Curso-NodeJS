@@ -1,0 +1,91 @@
+<!--Title: Medium - Perfil
+Crear un div con el siguiente contenido:
+Hipervínculo con el texto volver y que vuelva a la home.
+Crear una línea
+
+Crear un título h1 con tu nombre y apellido
+Crear un párrafo con una pequeña descripción tuya (si hay que escribirla)
+
+Crear un div con el siguiente contenido:
+Crear un span con el siguiente formato y texto '%NRO_SIGUIENDOS% Siguiendo'
+Crear un span con ' - '
+Crear un span con el siguiente formato y texto '%NRO_SEGUIDORES% Seguidores'
+Crear un span con ' - '
+
+Crar un span con el siguiente hipervínculo:
+Texto y formato: '%TU_HANDLER_DE_TWITTER%' (ej: @isnardi)
+Url: La dirección de twitter de tu usuario. (ej: https://twitter.com/isnardi)>
+Crear un span con ' - '
+Crar un span con el siguiente hipervínculo:
+Texto: '%TU_MAIL%' (ej: pepe@gmail.com)
+Url: tiene que madnar un mail a la dirección que pusiste de contacto
+Crear un comentario multilinea que diga 'Acá va el formulario de contacto'
+Crear una lista ordenada con 5 items de tecnologías que saben o van a aprender (html, css, node, javascript, mongo, etc)
+Copiar la sección pie de la home -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ||Medium - Perfil|| </title>
+    </head>
+    <body>
+        <div>
+            <a href="../index.html">Volver</a>
+            <hr />
+        </div><!-- FIN DIV -->
+        <h1> || SONIA ELISABET MORALES || </h1>
+        <p> {{Soy aspirante a diseñadora gráfica y desarrolladora FrontEnd, amante del arte, el diseño, la fotografía, el dibujo, la música y los videojuegos. Amo el cine, los recitales e ir a relajar a un bar}} </p>
+        <div>
+            <span>%NRO_SIGUIENDOS% Siguiendo</span>
+            <span> - </span>
+            <span>%NRO_SEGUIDORES% Seguidores</span>
+            <span> - </span>
+            <span>
+                <a href="http://twitter.com/nanapunkrocker"> @nanapunkrocker </a>
+            </span>
+            <span> - </span>
+            <span>
+                <a href="mailto:sonny.morales@hotmail.com"> sonny.morales@hotmail.com</a>
+            </span>
+            
+            <!--'Acá va el formulario de contacto'-->
+
+            <ol>
+                <li> |HTML5| </li>
+                <li> |CSS3| </li>
+                <li> |JavaScript| </li>
+                <li> |Node.js| </li>
+                <li> |Mongo| </li>
+            </ol>
+        </div><!-- FIN DIV -->
+        <div id="pie">
+            <hr />
+            <ul>
+                <li>
+                    <a href="https://medium.com/m/getting-started" target="_blank">¿Cómo arrancar?</a>
+                </li>
+                <li>
+                    <a href="https://help.medium.com/" target="_blank">Ayuda</a>
+                </li>
+                <li>
+                    <a href="https://medium.statuspage.io/" target="_blank">Estado</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/3minread" target="_blank">Blog</a>
+                </li>
+                <li>
+                    <a href="https://jobs.medium.com/" target="_blank">Carreras</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/policy/f03bf92035c9" target="_blank">Privacidad</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/policy/9db0094a1e0f" target="_blank">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="https://about.medium.com/" target="_blank">Sobre Medium</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

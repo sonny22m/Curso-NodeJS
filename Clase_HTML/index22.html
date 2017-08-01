@@ -1,0 +1,81 @@
+<!--Title: Unificando celdas con todo!
+Título: Unificando celdas con todo!
+Copiar y pegar todo el contenido del ejercicio 20
+Establecer el ancho de la tabla en 1200px
+Establecer el borde en 1
+Establecer el margen exterior de las celdas en 0 pixeles
+Copiar el contenido del footer al body de la tabla (dejar vacío el footer)
+Crear una celda que unifique el footer y agregar el contenido 'Aguante Rick & Morty' (tiene que quedar una celda que valga por 6)
+Unificar los valores de la primer columna del body de la tabla (No. (serie)) para que se ve una sola celda en toda la columa, es decir que tiene que valer por 5 celdas.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Unificando celdas con todo! </title>
+    </head>
+    <body>
+        <h1> Unificando celdas con todo! </h1>
+        <hr/>
+        <h2> Lista de episodios </h2>
+        <h3> Temporada 1: 2013-2014 </h3>
+        <table width="1200" cellspacing="0" border="1" >
+            <thead>
+                <tr>
+                    <th> No. (serie) </th>
+                    <th> No. (temp.) </th>
+                    <th> Título </th>
+                    <th> Director </th>
+                    <th> Escritor(es) </th>
+                    <th> Audiencia (en millones) </th>
+                </tr><!-- FIN TR -->
+            </thead><!-- FIN THEAD -->
+            <tbody>
+                <tr>
+                    <td rowspan="5"> 1 </td>
+                    <td> 1 </td>
+                    <td> Pilot Buscando las semillas (LA) </td>
+                    <td> Justin Roiland</td>
+                    <td> Dan Harmon y Justin Roiland </td>
+                    <td> 1.10 </td>
+                </tr><!-- FIN TR -->
+                <tr>
+                    <td> 2 </td>
+                    <td> 2 </td>
+                    <td> Lawnmower Dog Invasión canina (LA)	</td>
+                    <td> John Rice </td>
+                    <td> Ryan Ridley </td>
+                    <td> 1.51 </td>
+                </tr><!-- FIN TR -->
+                <tr>
+                    <td> 3 </td>
+                    <td> 3 </td>
+                    <td> Anatomy Park Parque anatómico (LA) </td>
+                    <td> John Rice </td>
+                    <td> Eric Acosta y Wade Randolph </td>
+                    <td> 1.30 </td>
+                </tr><!-- FIN TR -->
+                <tr>
+                    <td> 4 </td>
+                    <td> 4 </td>
+                    <td> M. Night Shaym-Aliens! La simulación alienígena (LA) </td>
+                    <td> Jeff Myers </td>
+                    <td> Tom Kauffman </td>
+                    <td> 1.32 </td>
+                </tr>
+                <tr>
+                    <td> 5 </td>
+                    <td> 5 </td>
+                    <td> Meeseeks and Destroy Meeseeks destructores (LA) </td>
+                    <td> Bryan Newton </td>
+                    <td> Ryan Ridley </td>
+                    <td> 1.61 </td>
+                </tr><!-- FIN TR -->
+            </tbody><!-- FIN TBODY -->
+            <tfoot>
+                <tr>
+                    <td colspan="6">Aguante Rick & Morty</td>
+                </tr><!-- FIN TR -->
+            </tfoot><!-- FIN TFOOT -->
+        </table><!-- FIN TABLE -->
+    </body>
+</html>

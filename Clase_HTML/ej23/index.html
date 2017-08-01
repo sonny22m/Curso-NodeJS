@@ -1,0 +1,36 @@
+<!--index.html
+
+Title: Login
+Título: Login
+Crear una linea
+
+Crear un formulario con los siguientes atributos:
+action: login.html
+method: get
+enctype: 'application/x-www-form-urlencoded'
+
+Crear los siguientes campos dentro del form:
+Input de texto con los siguientes atributos:
+name: username placeholder: username size: 30 maxlength: 12
+
+Input de password con los siguientes atributos:
+name: password size: 30 maxlength: 8 placeholder: password
+
+Botón de submit 
+texto: Login  name: login  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+    </head>
+    <body>
+        <h1> Login </h1>
+        <hr/>   
+        <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+            <Input type="text" name="username" placeholder="Your User" size="30" maxlength="12"></Input>
+            <Input type="password" name="password" size="30" maxlength="8" placeholder="Your Pass"></Input>
+            <Input type="submit" name="login" value="Login"></Input>
+        </form>
+    </body>
+</html>

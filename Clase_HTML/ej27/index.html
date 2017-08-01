@@ -1,0 +1,23 @@
+<!--Title: Usando inputs ocultos Título Usando inputs ocultos
+
+Agregar el siguiente input hidden al formulario de login
+name: 'pagina'
+value: 'login'
+Comprobar en el browser que hace el campo hidden al submitear el formulario  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Usando inputs ocultos Título Usando inputs ocultos </title>
+    </head>
+    <body>
+        <h1> Usando inputs ocultos Título Usando inputs ocultos </h1>
+        <hr/>   
+        <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+            <Input type="text" name="username" placeholder="Your User" size="30" maxlength="12"></Input>
+            <Input type="password" name="password" size="30" maxlength="8" placeholder="Your Pass"></Input>
+            <input type="hidden" name="pagina" value="login"></Input>
+            <Input type="submit" name="login" value="Login"></Input>
+        </form>
+    </body>
+</html>

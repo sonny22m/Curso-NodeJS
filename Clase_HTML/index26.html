@@ -1,0 +1,58 @@
+<!--Title: Super Heroes con checbox
+Título: Super Heroes con checbox
+Crear una linea
+Crear un formulario con los siguientes atributos:
+action: #
+Crear un div
+Crear un párrafo con el siguiente texto: 'Seleccionar:'
+
+Por cada super heroe de esta lista crear un input checkbox:
+Lista de super heroes: Batman, Spider-Man, Wolverine, Superman, Flash, Captain America, Iron Man, Hulk, Thor, Deadpool, Rogue, Wonder Woman, 
+Daredevil, Gambit, Professor X, Nightcrawler, Storm, Nightwing, Green Lantern, Green Arrow
+
+Crear un checkbox con los siguientes atributos:
+name: superheroe
+value: %NOMBRE_DE_SUPERHEROE%
+texto: %NOMBRE_DE_SUPERHEROE%
+
+Seleccionar por default los siguientes super heroes:
+Batman  Deadpool  Hulk
+Botón de submit
+texto: Elegir  name: submit -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Super Heroes con checkbox </title>
+    </head>
+    <body>
+        <h1> Super Heroes con checkbox </h1>
+        <hr/>
+        <form action="#">
+            <div>
+                <p> Seleccionar: </p>
+                <input type="checkbox" name="superheroe" value="Batman" checked="checked"> Batman </input>
+                <input type="checkbox" name="superheroe" value="Spider-Man"> Spider-Man </input>
+                <input type="checkbox" name="superheroe" value="Wolverine"> Wolverine </input>
+                <input type="checkbox" name="superheroe" value="Superman"> Superman </input>
+                <input type="checkbox" name="superheroe" value="Flash"> The Flash </input>
+                <input type="checkbox" name="superheroe" value="Captain America"> Captain America </input>
+                <input type="checkbox" name="superheroe" value="Iron Man"> Iron Man </input>
+                <input type="checkbox" name="superheroe" value="Hulk"> Hulk </input>
+                <input type="checkbox" name="superheroe" value="Thor"> Thor </input>
+                <input type="checkbox" name="superheroe" value="Deadpool" checked="checked"/> Deadpool </input>
+                <input type="checkbox" name="superheroe" value="Rogue"> Rogue </input>
+                <input type="checkbox" name="superheroe" value="Wonder Woman"> Wonder Woman </input>
+                <input type="checkbox" name="superheroe" value="Daredevil"> Daredevil </input>
+                <input type="checkbox" name="superheroe" value="Gambit"> Gambit </input>
+                <input type="checkbox" name="superheroe" value="Professor X"> Professor X </input>
+                <input type="checkbox" name="superheroe" value="Nightcrawler"> Nightcrawler </input>
+                <input type="checkbox" name="superheroe" value="Storm"> Storm </input>
+                <input type="checkbox" name="superheroe" value="Nightwing"> Nightwing </input>
+                <input type="checkbox" name="superheroe" value="Green Lantern"> Green Lantern </input>
+                <input type="checkbox" name="superheroe" value="Green Arrow"> Green Arrow </input>
+            </div>
+            <input type="submit" name="submit" value="Elige"></input>
+        </form>
+    </body>
+</html>

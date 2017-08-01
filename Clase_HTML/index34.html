@@ -1,0 +1,36 @@
+<!--Title: Formularios bien formados
+Título: Formularios bien formados
+Crear una linea
+Crear un formulario con los siguientes atributos:  action: #
+Crear un elemento fieldset
+Crear un elemento legend con el texto: 'Login'
+Crear un label
+texto: Usuario:  for: username
+Crear un input de texto
+name: username  id: username  placeholder: 'Ingrese nombre de usuario'
+Crear un label  texto: Password:  for: password
+Crear un input de password  name: password  id: password  placeholder: 'Ingrese su password'
+Crear un input de submit  value: Login -->
+
+
+	    
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formularios bien formados </title>
+    </head>
+    <body>
+        <h1> Formularios bien formados </h1>
+        <hr/>
+        <form action="#">
+            <fieldset> 
+                <legend> ||Login|| </legend>
+                <label for="username"> Usuario: </label>
+                    <input type="text" name="username" id="username" placeholder="Ingrese su usuario"></input>
+                <label for="password"> Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Ingrese su pass"></input>
+                    <input type="submit" name="submit" value="Login"></input>
+            </fieldset>
+        </form>
+    </body>
+</html>
