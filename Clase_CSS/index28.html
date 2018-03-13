@@ -1,0 +1,65 @@
+<!--Ejercicio 28 Crear un documento HTML con el nombre index28.html
+
+Title: Las cosas se ven diferente de lo que son
+Declarar una etiqueta style
+  Crear un título h1 con el texto 'Las cosas se ven diferente de lo que son'
+  Crear 2 divs con texto autogenerado corto (5, 6 palabras)
+  Crear un elemento nav
+  Crear 5 hiperviculos con texto autogenerado
+El atributo href de cada hipervínculo tiene que apuntar a #
+  Crear 2 elemetos span con texto autogenerado corto (5, 6 palabras)
+En la etiqueta style:
+  Seleccionar todos los divs de la página y establecer las siguientes propiedades:
+    Borde: 2 píxeles sólido y de color de fondo #AAA
+  Se deben comportar como elementos en linea  Color de fondo #EEE  Márgenes: 10px
+  Seleccionar los elementos hipervínculos que están dentro del elemento nav y establecer las siguientes propiedades:
+    Se deben comportar como elementos en bloque
+      Color de fondo: rojo  Color de tipografía: blanca  Decorado de texto: ninguno  Borde: 1 px de ancho, sólido y violeta
+  Seleccionar todos los elementos span y establecer las sisguientes propiedades:
+    Border: 2 píxeles sólido y de color #AAA  Color de fondo: #EEE  Márgenes: 20px
+  Se deben comportar como elementos inline-block
+    Podemos ver que los elementos inline-block tienen la particularidad de ser en línea pero se pueden utilizar atributos como el márgen superior/inferior como en los elementos en bloque-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Las cosas se ven diferente de lo que son</title>
+    <style type="text/css">
+      div {
+        border: 2px solid #AAA;
+        display: inline;
+        background-color: #EEE;
+        margin: 10px; 
+      }
+      nav a {
+        background-color: red;
+        display: block;
+        color: white;
+        text-decoration: none;
+        border: 1px solid violet;
+      }
+      span {
+        border: 2px solid #AAA;
+        background-color: #EEE;
+        margin: 20px; 
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Las cosas se ven diferente de lo que son</h1>
+    <div>Integer a enim et ligula aliquet porttitor eu eu erat.</div>
+    <div>Curabitur sed enim et nibh accumsan pellentesque.</div>
+    <nav>
+      <a href="#">Curabitur sed purus ut tortor elementum ultricies ac finibus massa.</a>
+      <a href="#">Nam sagittis arcu vitae tortor aliquet, et ultricies ligula placerat.</a>
+      <a href="#">Nullam ullamcorper velit eget dui porttitor eleifend.</a>
+      <a href="#">Nam nec enim sit amet ligula pretium ullamcorper vel vitae quam.</a>
+      <a href="#">Donec ornare turpis nec quam auctor eleifend.</a>
+      <a href="#">Pellentesque eget sem quis nisi commodo auctor.</a>
+    </nav>
+    <span>Ut gravida turpis at convallis pretium.</span>
+    <span>Aliquam hendrerit nibh sed lacus faucibus molestie.
+</span>
+  </body>
+</html>

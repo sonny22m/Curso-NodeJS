@@ -1,0 +1,92 @@
+<!--Ejercicio 37  Crear un documento HTML con el nombre index37.html
+
+Title: Pseudo Elementos
+Declarar una etiqueta style
+  Crear un título h1 con el siguiente texto 'Pseudo Elementos'
+  Crear un elemento nav
+  Crear los siguientes hipervinculos con el href=#:  Home  About  Contact  News
+  Crear una lista desordenada con 5 elementos con texto autogenerado
+En la etiqueta style:
+  Seleccionar el elemento body y establecer la siguiente propiedad:
+Família tipográfica: Arial, Helvetica, sans-serif
+  Seleccionar todos los hipervínculos que estan dentro del elemento nav
+Color de fondo: #C2FAFE  Border: 2px solid #0B9EA8  Padding: 10px  Decorado de texto: none  Color de texto: #0B9EA8
+  Seleccionar las siguientes pseudo clases:
+    hover:  Decorado de texto:underline  Color de fondo: #0B9EA8  Color de texto: blanco
+    active:  Color de fondo: #046A71
+  Seleccionar todos los elementos list items y establecer las siguientes propiedades:
+Padding: 20px  Color de fondo: #eee  Borde: 1px solid black
+  Seleccionar las siguientes pseudo clases:
+    hover:  Color de fondo: #ccc  Tamaño de tipografía: 120%  
+      last-child:  Borde: none  
+      first-child:  Cuerpo de tipografía: negrita
+    active:  Decorado de texto: tachado
+Seleccionar el elemento nav y establecer la siguiente propiedad:  Margen inferior: 50px-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo Elementos</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+      nav a {
+        background-color: #C2FAFE;
+        border: 2px solid #0B9EA8;
+        padding: 10px;
+        text-decoration: none;
+        color: #0B9EA8;
+      }
+      nav a:hover {
+        text-decoration: underline;
+        background-color: #0B9EA8;
+        color: white;
+      }
+      nav a:active {
+        background-color: #046A71;
+      }
+      li {
+        padding: 20px;
+        background-color: #eee;
+        border-bottom: 1px solid black;
+      }
+      li:hover {
+        background-color: #ccc;
+        font-size: 120%;
+        
+      }
+      li:last-child {
+        border: none;
+      }
+      
+      li:first-child {
+        font-weight: bold;
+      }
+      
+      li:active {
+        text-decoration: line-through;
+      }
+      
+      nav {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Elementos</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">News</a>
+    </nav>
+    <ul>
+      <li>Proin pharetra quam non fringilla rutrum.</li>
+      <li>Vestibulum a enim semper, molestie ligula non, egestas dolor.</li>
+      <li>Maecenas aliquam nibh at sapien ullamcorper, a sagittis tellus consectetur.</li>
+      <li>Nullam semper lorem sed enim lobortis, eget semper ante sollicitudin.</li>
+      <li>Cras luctus nulla et porta lobortis.</li>
+    </ul>
+  </body>
+</html>

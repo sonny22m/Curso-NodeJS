@@ -1,0 +1,53 @@
+<!--Ejercicio 36  Crear un documento HTML con el nombre index36.html
+
+Title: Amamos los pseudo elementos
+Declarar una etiqueta style
+  Crear un título h1 con el siguiente texto 'Amamos los pseudo elementos'
+  Crear 5 párrafos con texto autogenerado
+En la etiqueta style:
+  Seleccionar todos los párrafos por nombre de etiqueta:
+  Pseudolemento de selección:  Color de fondo: rosa  Color de tipografía: blanco  Cuerpo de la tipografía: negrita
+  Pseudolemento de primer letra:  Tamaño de tipografía: 30px  Cuerpo de la tipografía: negrita  Color de tipografía: rojo  Padding: 20px
+  Pseudolemento de primer linea:  Estilo de texto: itálico  
+  Pseudolemento de fin de elemento (after):  Contenido (propiedad content): 'FIN DE LA FIESTA'  Cuerpo de la tipografía: negrita  Color de tipografía: rojo-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amamos los pseudo elementos <3 <3 </title>
+    <style type="text/css">
+      p::selection {
+        background-color: pink;
+        color: white;
+        font-weight: bold;
+      }
+      p::first-letter {
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+        padding: 20px;
+      }
+      p::first-line {
+        font-style: italic;
+      }
+      p::after {
+        content: 'FIN DE LA FIESTA'; /*propiedad content*/
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Amamos los pseudo elementos <3 <3 </h1>
+    
+    <p>Praesent ornare ut tellus non gravida. Fusce sollicitudin tellus porta tellus finibus, ut ultrices quam feugiat. Vivamus at nibh elit. Phasellus viverra volutpat posuere. Duis et turpis at orci finibus pharetra sodales eu massa. Pellentesque accumsan sagittis felis, a dignissim metus feugiat ut. Aliquam maximus urna leo, porttitor pharetra metus aliquet eget. Aliquam posuere rutrum aliquet.</p>
+    
+    <p>Nulla in euismod tellus. Fusce vestibulum, turpis quis luctus varius, nulla ligula consectetur neque, eget porta risus diam a lectus. Nullam consectetur facilisis orci nec eleifend. Donec quis leo congue dolor posuere cursus. Etiam commodo vitae libero id vestibulum. Nam rhoncus at urna sed mattis. Maecenas mollis, ante at molestie tempus, nisi lectus porttitor orci, ac faucibus lectus eros nec lectus. Duis sed velit vel urna luctus mattis sit amet non nulla.</p>
+    
+    <p>Vestibulum odio est, gravida et sodales non, posuere at dolor. Nunc leo dui, vehicula quis velit vel, aliquet lacinia lorem. Suspendisse eget mi lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ultrices rutrum sagittis. Mauris metus odio, auctor at leo at, cursus facilisis est. Quisque pharetra interdum nisl nec venenatis. Curabitur eu ipsum aliquam lectus dignissim condimentum. Integer elementum ipsum non dui sodales efficitur. Suspendisse sollicitudin nisl molestie sem placerat, hendrerit interdum purus placerat. Suspendisse eu nisl a lorem rutrum aliquam. Donec mollis leo eu urna suscipit, eleifend molestie neque tempus. In sit amet facilisis dolor, non vulputate ex. Fusce sollicitudin sapien sodales massa condimentum condimentum.</p>
+    
+    <p>Proin vel ligula gravida, viverra felis eget, iaculis nunc. Quisque varius quam massa, eget sagittis ante ultrices sit amet. Morbi at tempor neque. Proin sit amet congue lorem, eget pellentesque lectus. Nam vehicula sem sed sem malesuada facilisis. Pellentesque iaculis mollis nibh eu imperdiet. Integer augue ligula, facilisis non nunc a, ornare pellentesque velit. Nunc semper lacus quis dictum ullamcorper. Praesent bibendum id quam sed dapibus. Pellentesque quam ex, cursus eu blandit quis, suscipit at nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut mattis lectus. Etiam id quam sem.</p>
+    
+    <p>Fusce dapibus tellus vel metus ultricies, at consectetur enim ultrices. Vestibulum non orci sem. Aliquam vel eros tellus. Sed fringilla lacus ligula, ut dictum tellus posuere ut. Suspendisse quis nibh dictum, vehicula nunc sed, volutpat erat. Vivamus dignissim, nulla id imperdiet finibus, felis erat imperdiet nulla, id suscipit dolor velit a sapien. Donec egestas libero sit amet augue fringilla, ac vehicula ipsum rhoncus. Etiam tincidunt mollis neque, vel imperdiet libero pulvinar in. Sed eu iaculis tellus. Nulla facilisi. Donec eu laoreet dolor, in tincidunt mi. In purus dui, vestibulum vitae ex vitae, cursus finibus mi. Maecenas convallis nisi quis scelerisque eleifend. Integer vestibulum dictum leo, in imperdiet tortor dictum elementum.</p>
+  </body>
+</html>

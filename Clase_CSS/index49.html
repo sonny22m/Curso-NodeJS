@@ -1,0 +1,84 @@
+<!--Ejercicio 49
+Crear un documento HTML con el nombre index49.html
+index49.html
+
+Title: Cambio de tamaño
+Agregar en el head el siguiente meta:
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+Declarar una etiqueta style
+	Crear un título h1 con el siguiente texto 'Cambio de tamaño'
+	Crear un título h2 con el siguiente texto 'Magico!!!!'
+	Crear 6 párrafos con texto autogenerado
+En la etiqueta style:
+Seleccionar el elemento body
+Establecer el tamaño de la tipografía en 16px  Color de fondo: #eee
+Seleccionar los elementos título h2 Color de texto: red  Display en none (para que lo oculte)
+
+Agregar el selector de media: @media (max-width:412px)
+
+Seleccionar el elemento body Color de fondo: black Color de texto: white Alineado de texto: justify Familia tipográfica: Arial, 		Helvetica, sans-serif Tamaño de tipografía: 14px
+Seleccionar el elemento h1
+	Display en none para que se oculte
+Seleccionar el elemento h2
+	Display en block para que se muestre
+	Tamaño de tipografía: 40px
+	Agregar el selector de media: @media (max-width:732px) and (orientation: landscape)
+Seleccionar el elemento body
+	Color de fondo: blues
+	Agranda y achicar el browser para ver que pasa
+	Utilizar el developers tools de chrome para ver el sitio como si fuera un celular
+	Cambiar la orientación del celular para ver que pasa!-->
+
+
+<!DOCTYPE html>
+<html>
+ 	<head>
+    	<title> Cambio de tamaño!! </title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<style type="text/css">
+	      	body {
+	        	font-size: 16px;
+	        	background-color: #eee;
+	      	}
+	      	h2 {
+	        	color: red;
+	        	display: none;
+	      	}
+	      	@media (max-width:412px) {
+	        	body {
+	          		background-color: black;
+	          		color: white;
+	          		text-align: justify;
+	          		font-family: Arial, Helvetica, sans-serif;
+	          		font-size: 14px;
+	        	}
+	        	h1 {
+	          		display: none;
+	        	}
+	        	h2 {
+	          		font-size: 40px;
+	          		display: block;
+	        	}
+	      	}
+	      	@media (max-width:732px) and (orientation: landscape) {
+	        	body {
+	          		background-color: blue;
+	        	}
+	      	}
+    	</style>
+  	</head>
+  	<body>
+    	<h1> Cambio de tamaño!! </h1>
+    	<h2> Es Mágico!!!! </h2>
+    
+    	<p>Nunc non lobortis massa, et laoreet lorem. Pellentesque id lectus sit amet dui maximus cursus. Quisque tempor eget leo vel semper. Maecenas tincidunt ex ut dapibus rutrum. Cras iaculis rutrum turpis sed pretium. Pellentesque sollicitudin lectus est, et placerat quam fermentum ultrices. Nullam ullamcorper est est, et placerat massa mollis ornare. Suspendisse sit amet faucibus sem.</p>
+    
+    	<p>Fusce dapibus eleifend urna in convallis. Nam eget dignissim justo. Maecenas vel mauris cursus, vestibulum purus nec, blandit nisl. Duis laoreet, enim non mattis malesuada, diam neque lobortis mi, eu bibendum augue arcu a est. Pellentesque interdum, nunc non dapibus semper, ligula elit venenatis elit, varius faucibus arcu dolor quis ligula. Maecenas convallis tortor sed nibh posuere pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla, massa nec tincidunt imperdiet, ante odio ullamcorper sem, sed pellentesque risus metus a risus. Integer a mauris eget lorem auctor fermentum at at urna. Aliquam erat volutpat. Vivamus pharetra ornare sapien, sed blandit metus. Vestibulum risus mauris, egestas eget efficitur ut, cursus ac odio. Morbi eu ipsum at turpis semper auctor.</p>
+    
+    	<p>Vivamus ullamcorper tristique felis non tincidunt. Sed eu sapien vehicula, bibendum nisl eget, euismod libero. Curabitur faucibus lacinia massa at eleifend. Duis feugiat tellus sit amet augue imperdiet, id facilisis lacus sollicitudin. Aliquam purus turpis, rhoncus quis mollis sit amet, commodo non elit. Etiam aliquam eros et lacus rhoncus egestas. Sed aliquet iaculis enim nec tempor. Cras nec ligula tellus. Etiam id ante ligula.</p>
+    
+    	<p>Proin enim dolor, feugiat nec justo fringilla, ultrices consectetur justo. Nam condimentum pellentesque fermentum. Proin nec congue leo. Integer vel sem felis. Nullam ex tellus, venenatis aliquet interdum at, volutpat sit amet lacus. Nunc lobortis, purus nec eleifend vestibulum, eros diam gravida nibh, vel suscipit ex libero vel eros. Mauris vitae tristique mi. Vivamus massa quam, volutpat in enim ut, eleifend dignissim risus. Duis hendrerit tortor sed lacus fringilla, id commodo orci molestie. Duis varius tristique leo sed egestas. Maecenas quis mattis sapien. Etiam vel ligula justo. Suspendisse faucibus, eros nec sagittis ullamcorper, ipsum metus malesuada sem, nec blandit felis ante eu nisi. Nunc nisl dui, eleifend in lorem ac, tincidunt cursus purus. Donec dapibus vitae nulla non faucibus.</p>
+    
+    	<p>Donec purus neque, pretium ut nulla id, blandit accumsan orci. Mauris porttitor scelerisque velit sit amet rhoncus. Fusce dolor justo, sodales fermentum vulputate at, lacinia sed risus. Donec lectus lectus, tincidunt a eros id, blandit gravida quam. Cras varius faucibus quam sit amet euismod. Vivamus elementum a leo et gravida. Ut nibh mauris, scelerisque ac gravida eget, pretium ut erat. Fusce vel condimentum lacus, tempus porta purus. Cras aliquet volutpat consequat. In hac habitasse platea dictumst. Aliquam a eros nibh. Cras ligula nisl, sagittis at posuere sed, suscipit a turpis. Sed quam enim, fermentum non sapien nec, cursus porta quam. Sed iaculis arcu at diam sollicitudin feugiat. Suspendisse potenti. Integer vulputate feugiat sem ac consequat.</p>
+  	</body>
+</html>

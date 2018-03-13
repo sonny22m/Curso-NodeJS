@@ -1,0 +1,74 @@
+<!--Ejercicio 30
+
+Title: Buen fondo
+Declarar una etiqueta style
+  Crear un elemento div con la clase contenido con los siguientes elementos:
+  Crear un título h1 con el texto 'Buen fondo'
+  Crear 5 párrafos autogenerados    Al 2do y 4to párrafo agregar la clase destacado
+En la etiqueta style:
+  Asignar al body las siguientes propiedades:
+    Imagen de fondo: fondo1.jpg  Margenes en 0  Padding en 0  Tamaño de tipografía: 16px  Familia de tipografía: Arial, Helvetica, sans-serif
+  Asignar al div con la clase contenido las siguientes propiedades:
+    Color de fondo: blanco  Ancho: 600px  Padding: Superiro: 10px Izquierdo y derecho: 50px Inferior: 80px
+Márgenes:  Superiro e inferior: 0  Izquierdo y derecho: en automático (para que se centre)  Sombra de la caja: 0 2px 10px #444
+  Asignar al título h1 que esta dentro del elemento div (usar el selector correcto) las siguientes propiedades:
+    Márgenes: 0  Tamaño de tipografía: 30px  Alto de línea: 60px  Border inferior:  Ancho: 1px  Color: #DDD  Estilo: sólido  Márgen inferior: 20px
+  Asignar a los párrafos que estan dentro del elemento div (usar el selector correcto) las siguientes propiedades:
+    Alinear los textos de forma justificada  Alto de línea: 20px
+  Asignar a la clase destacado las siguientes propiedades:  Color de fondo: #EEE  Padding de 20px en todos sus lados  Sombra de la caja: 0 2px 10px #444-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buen fondo</title>
+    <style type="text/css">
+      body {
+        background-image: url(fondo.jpg);
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .contenido {
+        background-color: white;
+        width: 600px;
+        padding: 10px 50px 80px 50px;
+        margin: 0 auto;
+        box-shadow: 0 2px 10px #444;
+      }
+      .contenido h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 60px;
+        border-bottom: 1px solid #DDD;
+        margin-bottom: 20px;
+        
+      }
+      .contenido p {
+        text-align: justify;
+        line-height: 20px;
+      }
+      .destacado {
+        background-color: #EEE;
+        padding: 20px;
+        box-shadow: 0 2px 10px #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenido">
+      <h1>Buen fondo</h1>
+      
+      <p>Maecenas scelerisque lacus ac tortor aliquam finibus. Curabitur posuere elementum massa, at ornare metus auctor non. Sed imperdiet ligula dolor. Nulla at condimentum odio. Pellentesque ut nulla sem. Morbi ut suscipit erat, non ultricies tortor. Cras quis placerat nisl.</p>
+      
+      <p class="destacado">Nulla in euismod tellus. Fusce vestibulum, turpis quis luctus varius, nulla ligula consectetur neque, eget porta risus diam a lectus. Nullam consectetur facilisis orci nec eleifend. Donec quis leo congue dolor posuere cursus. Etiam commodo vitae libero id vestibulum. Nam rhoncus at urna sed mattis. Maecenas mollis, ante at molestie tempus, nisi lectus porttitor orci, ac faucibus lectus eros nec lectus. Duis sed velit vel urna luctus mattis sit amet non nulla.</p>
+
+      <p>Nam suscipit ipsum sit amet tortor placerat, sed imperdiet neque luctus. In mattis, dolor ac tincidunt tristique, est mi congue elit, ut hendrerit lacus leo eget lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed augue et lacus laoreet consequat id vel augue. Donec ornare semper ipsum. Vivamus rhoncus semper tortor vitae finibus. Etiam magna augue, convallis a neque sed, vehicula faucibus ex. Aliquam malesuada, nibh sit amet facilisis auctor, ligula ante consectetur felis, commodo facilisis quam nisl in nisl. Pellentesque nec massa consequat, lobortis sapien vitae, consequat urna. Sed lacinia augue eget ipsum dictum fringilla.</p>
+      
+      <p class="destacado">Maecenas scelerisque lacus ac tortor aliquam finibus. Curabitur posuere elementum massa, at ornare metus auctor non. Sed imperdiet ligula dolor. Nulla at condimentum odio. Pellentesque ut nulla sem. Morbi ut suscipit erat, non ultricies tortor. Cras quis placerat nisl.</p>
+      
+      <p>Praesent ornare ut tellus non gravida. Fusce sollicitudin tellus porta tellus finibus, ut ultrices quam feugiat. Vivamus at nibh elit. Phasellus viverra volutpat posuere. Duis et turpis at orci finibus pharetra sodales eu massa. Pellentesque accumsan sagittis felis, a dignissim metus feugiat ut. Aliquam maximus urna leo, porttitor pharetra metus aliquet eget. Aliquam posuere rutrum aliquet.</p>
+    </div>
+  </body>
+</html>

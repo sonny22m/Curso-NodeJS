@@ -1,0 +1,43 @@
+<!--Ejercicio 48   Crear un documento HTML con el nombre index48.html
+Title: Hola, vengo a flotar!
+
+Declarar una etiqueta style
+	Crear un título h1 con el siguiente texto 'Hola, vengo a flotar!'
+	Crear 2 divs con texto autogenerado
+Al primer div agregar la clase izquierda
+	Crear un título h2 con el siguiente texto 'Nueva sección'
+	Crear 1 div con texto autogenerado
+En la etiqueta style:
+Seleccionar los elementos que tienen la clase 'izquierda'
+	Este elemento tiene que flotar a la izquierda  Ancho: 200px  Color de fondo: #ccc  Alineado de texto: justify  Margen izquierdo: 20px  Margen inferior: 20px
+Seleccionar el título h2
+	Cortar la ejecución de la flotación en ambos sentidos-->
+
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<title>Hola, vengo a flotar! Jojojooooojo</title>
+    	<style type="text/css">
+      		.izquierda {
+        		float: left;
+        		width: 200px;
+        		background-color: #ccc;
+        		text-align: justify;
+        		margin-right: 20px;
+        		margin-bottom: 20px;
+      		}
+      		h2 {
+        		clear: both;
+      		}
+    	</style>
+  	</head>
+  	<body>
+    	<h1>Hola, vengo a flotar! Jojojooooojo</h1>
+    	<div class="izquierda">Proin enim dolor, feugiat nec justo fringilla, ultrices consectetur justo. Nam condimentum pellentesque fermentum. Proin nec congue leo. Integer vel sem felis. Nullam ex tellus, venenatis aliquet interdum at, volutpat sit amet lacus. Nunc lobortis, purus nec eleifend vestibulum, eros diam gravida nibh, vel suscipit ex libero vel eros. Mauris vitae tristique mi. Vivamus massa quam, volutpat in enim ut, eleifend dignissim risus. Duis hendrerit tortor sed lacus fringilla, id commodo orci molestie. Duis varius tristique leo sed egestas. Maecenas quis mattis sapien. Etiam vel ligula justo. Suspendisse faucibus, eros nec sagittis ullamcorper, ipsum metus malesuada sem, nec blandit felis ante eu nisi. Nunc nisl dui, eleifend in lorem ac, tincidunt cursus purus. Donec dapibus vitae nulla non faucibus.</div>
+    	
+    	<div>Donec purus neque, pretium ut nulla id, blandit accumsan orci. Mauris porttitor scelerisque velit sit amet rhoncus. Fusce dolor justo, sodales fermentum vulputate at, lacinia sed risus. Donec lectus lectus, tincidunt a eros id, blandit gravida quam. Cras varius faucibus quam sit amet euismod. Vivamus elementum a leo et gravida. Ut nibh mauris, scelerisque ac gravida eget, pretium ut erat. Fusce vel condimentum lacus, tempus porta purus. Cras aliquet volutpat consequat. In hac habitasse platea dictumst. Aliquam a eros nibh. Cras ligula nisl, sagittis at posuere sed, suscipit a turpis. Sed quam enim, fermentum non sapien nec, cursus porta quam. Sed iaculis arcu at diam sollicitudin feugiat. Suspendisse potenti. Integer vulputate feugiat sem ac consequat.</div>
+    	
+    	<h2>Nueva seccion</h2>
+    	<div>Fusce dapibus eleifend urna in convallis. Nam eget dignissim justo. Maecenas vel mauris cursus, vestibulum purus nec, blandit nisl. Duis laoreet, enim non mattis malesuada, diam neque lobortis mi, eu bibendum augue arcu a est. Pellentesque interdum, nunc non dapibus semper, ligula elit venenatis elit, varius faucibus arcu dolor quis ligula. Maecenas convallis tortor sed nibh posuere pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla, massa nec tincidunt imperdiet, ante odio ullamcorper sem, sed pellentesque risus metus a risus. Integer a mauris eget lorem auctor fermentum at at urna. Aliquam erat volutpat. Vivamus pharetra ornare sapien, sed blandit metus. Vestibulum risus mauris, egestas eget efficitur ut, cursus ac odio. Morbi eu ipsum at turpis semper auctor.</div>
+  	</body>
+</html>

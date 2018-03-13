@@ -1,0 +1,60 @@
+<!--Ejercicio 39  Crear un documento HTML con el nombre index39.html
+
+Title: A tomar lista!
+Declarar una etiqueta style
+  Crear un título h1 con el siguiente texto 'A tomar lista!'
+  Crear una lista desordenada con 3 items con los textos: item 1, item 2 y item 3
+  Crear una lista desordenada con 3 items con los textos: item 1, item 2 y item 3 y agregarle la clase 'vacia'
+  Crear una lista ordenada con 3 items con los textos: item 1, item 2 y item 3
+En la etiqueta style:
+  Seleccionar todas las listas desordenadas  Color de fondo: red
+  Seleccionar todos los elementos list item que estan dentro de la listas desordenadas  Borde: 1px solid black  Color de fondo: gray
+    Agregar la pseudo clase hover a los elementos list item que estan dentro de las listas desordenadas
+    Cambiar el list-style: square inside
+  Seleccionar los elementos que tienen la clase 'vacia'  Margen: 0  Padding: 0  list-style-type: none
+  Seleccionar las listas ordenadas  list-style: decimal-leading-zero outside-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A tomar lista!</title>
+    <style type="text/css">
+      ul {
+        background-color: red;
+      }
+      ul li {
+        border: 1px solid black;
+        background-color: gray;
+      }
+      ul li:hover {
+        list-style: square inside;
+      }
+      .vacia {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      ol {
+        list-style: decimal-leading-zero outside;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A tomar lista!</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <ul class="vacia">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+  </body>
+</html>

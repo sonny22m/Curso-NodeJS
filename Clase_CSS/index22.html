@@ -1,0 +1,67 @@
+<!-- Title: Esto es muy border
+Declarar una etiqueta style
+Crear un título h1 con el siguiente texto 'Esto es muy border'
+Crear una línea
+
+Crear un div con texto autogenerado
+Crear un elemento section texto autogenerado
+Crear un título h2 con texto autogenerado
+En la etiqueta style:
+        Establecer el siguiente borde al elemento linea:  Ancho: 2px Diseño: solid Color: rojo
+Utilizar sólo una propiedad border
+        Establecer el siguiente borde al elemento div:  Ancho: 3px Diseño: dashed Color: #ccc
+Utilizar las propiedades de border width, style y color
+        Establecer el siguiente borde inferior al elemento section: Ancho: 1px Diseño: groove Color: blue
+        Establecer los siguientes bordes al título h2: Borde superior: Ancho: 1px  Diseño: solid Color: orange
+                Borde inferior: Ancho: 2px Diseño: groove Color: red
+                Borde izquierdo: Ancho: 3px Diseño: dashed Color: green
+                Borde derecho:Ancho: 4px Diseño: dotted Color: blue
+Utilizar las propiedades width, style y color individual para cada borde (ejemplo: border-top-width, etc) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Esto es muy border </title>
+        <style type="text/css">
+            hr {
+                border-width: 2px;
+                border-color: red;
+                border-style: solid;
+                }
+            div {
+                border-width: 3px;
+                border-color: #ccc;
+                border-style: dashed;
+            }
+            section {
+                border-width: 1px;
+                border-color: blue;
+                border-style: groove;
+                }
+            h2 {
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: orange;
+
+                border-bottom-width: 2px;
+                border-bottom-style: groove;
+                border-bottom-color: red;
+
+                border-left-width: 3px;
+                border-left-style: dashed;
+                border-left-color: green;
+
+                border-right-width: 4px;
+                border-right-style: dotted;
+                border-right-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Esto es muy border </h1>
+        <hr/>
+        <div> Aliquam erat volutpat. Vestibulum aliquam magna nec quam pretium, in scelerisque eros malesuada. Mauris bibendum interdum nibh vel ullamcorper. Donec ultricies sed lorem congue pulvinar. Sed ultricies commodo fermentum. Quisque auctor enim at quam imperdiet aliquam. Suspendisse vel felis sit amet tortor ultrices egestas in eget lorem. Sed ligula tortor, iaculis at gravida eget, imperdiet a mi. </div>
+        <section> Aliquam erat volutpat. Vestibulum aliquam magna nec quam pretium, in scelerisque eros malesuada. Mauris bibendum interdum nibh vel ullamcorper. Donec ultricies sed lorem congue pulvinar. Sed ultricies commodo fermentum. Quisque auctor enim at quam imperdiet aliquam. Suspendisse vel felis sit amet tortor ultrices egestas in eget lorem. Sed ligula tortor, iaculis at gravida eget, imperdiet a mi. </section>
+        <h2> Vestibulum aliquam magna nec quam pretium, in scelerisque eros malesuada. </h2>
+    </body>
+</html>

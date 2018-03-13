@@ -1,0 +1,47 @@
+<!-- Title: Seleccionando elementos hijos
+Declarar una etiqueta style
+Crear un título h1 con el texto Selectores
+Crear una linea
+Crear un elemento div con los siguientes elementos
+Crear un título h1 con el texto 'Seleccionando elementos hijos'
+Crear dos párrafos con texto autogenerado
+Crear dos párrafos con texto autogenerado
+
+En la etiqueta style:
+Crear un selector para que todos los párrafos del documento sean de color rojo
+Crear un selector para que todos los títulos h1 del documento sean de color azul
+Crear un selector para que todos los títulos h1 que sean hijos de un div sean verdes
+Crear un selector para que todos los párrafos que sean hijos de un div sean grises -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Seleccionando elementos hijos </title>
+        <style type="text/css">
+            p {
+            color: red; 
+            }
+            h1 {
+            color: blue; 
+            }
+            div > h1 {
+            color: green;
+            }
+            div >p {
+            color: gray; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1> texto Selectores </h1>
+        <hr/>
+        <div>
+            <h1> Seleccionando elementos hijos </h1>
+            <p> Sed porta mattis quam. Curabitur iaculis consectetur eros quis tincidunt. Nullam aliquet enim sed lorem venenatis rhoncus. Duis vitae nisi a nibh ornare pellentesque eget ac tortor. Etiam placerat imperdiet interdum. Integer at pharetra ex. Nam urna ligula, ullamcorper porta molestie at, sollicitudin nec orci </p>  
+            <p> Sed porta mattis quam. Curabitur iaculis consectetur eros quis tincidunt. Nullam aliquet enim sed lorem venenatis rhoncus. Duis vitae nisi a nibh ornare pellentesque eget ac tortor. Etiam placerat imperdiet interdum. Integer at pharetra ex. Nam urna ligula, ullamcorper porta molestie at, sollicitudin nec orci </p>
+        </div>
+        <p> Sed porta mattis quam. Curabitur iaculis consectetur eros quis tincidunt. Nullam aliquet enim sed lorem venenatis rhoncus. Duis vitae nisi a nibh ornare pellentesque eget ac tortor. Etiam placerat imperdiet interdum. Integer at pharetra ex. Nam urna ligula, ullamcorper porta molestie at, sollicitudin nec orci </p>  
+        <p> Sed porta mattis quam. Curabitur iaculis consectetur eros quis tincidunt. Nullam aliquet enim sed lorem venenatis rhoncus. Duis vitae nisi a nibh ornare pellentesque eget ac tortor. Etiam placerat imperdiet interdum. Integer at pharetra ex. Nam urna ligula, ullamcorper porta molestie at, sollicitudin nec orci </p>
+
+    </body>
+</html>
