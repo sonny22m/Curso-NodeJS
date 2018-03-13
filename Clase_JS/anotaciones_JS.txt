@@ -1,0 +1,12 @@
+Ecmascript  =  Javascript
+
+lenguaje interpretados PHP JS RUBY PYTHON
+lenguaje compilados C# C++ Java (LOS CORRE UN PROGRAMA) IDE
+
+BABEL, INVESTIGAR.
+
+REPL
+
+las variable que nodevuelven un valor devuelven undefined
+
+

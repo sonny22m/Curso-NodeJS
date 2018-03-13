@@ -1,0 +1,8 @@
+/*Ejercicio 23  Crear un documento con el nombre ej23.js
+	Declarar la variable nombre
+Mostrar el valor de la variable de la siguiente forma: console.log(nombreDeLaVariable, valor)*/
+
+let nombre = "undefined";
+
+console.log("nombre" + " " + nombre);
+
